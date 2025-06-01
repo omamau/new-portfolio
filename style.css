@@ -146,66 +146,56 @@ h1, h2, h3, h4 {
 }
 
 /* ===== SKILLS SECTION ===== */
-.skills {
-  background-color: #f9f9ff;
-  padding: 4rem 2rem;
-}
+   /* ABOUT & SKILLS FLEX */
+    .about, .skills {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .about img, .skills img {
+      flex: 1;
+      max-width: 200px;
+      width: auto;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+    .text {
+      flex: 2;
+      padding: 1rem;
+    }
 
-.skills h3 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
+    /* SKILL BARS */
+    .skill-bar {
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      max-width: 400px;
+    }
+    .skill-bar span {
+      display: block;
+      height: 24px;
+      background: #797474bd;
+      color: #fff;
+      padding-left: 10px;
+      line-height: 24px;
+    }
 
-.skill-bars {
-  max-width: 700px;
-  margin: auto;
-}
+    /* SOFT SKILLS LIST */
+    .soft-skills {
+      text-align: left;
+      margin-top: 15px;
+    }
+    .soft-skills ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    .soft-skills li {
+      margin-bottom: 10px;
+    }
 
-.skill {
-  margin-bottom: 1.5rem;
-}
-
-.skill span {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.progress-bar {
-  background-color: #eee;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 18px;
-}
-
-.progress {
-  height: 100%;
-  background-color: #4b0082;
-  width: 0;
-  border-radius: 20px;
-  transition: width 1s ease-in-out;
-}
-
-.soft-skills {
-  margin-top: 3rem;
-  text-align: center;
-}
-
-.soft-skills h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.soft-skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-.soft-skills li {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
