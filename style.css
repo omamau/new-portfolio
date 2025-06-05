@@ -1,201 +1,173 @@
-/* ===== RESET AND BASE STYLES ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-h1, h2, h3, h4 {
-  color: #4b0082;
-}
-
-/* ===== NAVBAR ===== */
+/* Header */
 .navbar {
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
-  padding: 1rem 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 90%;
+  background-color: #fefcfe;
   z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f9f7f9;
 }
 
-.navbar .brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4b0082;
-}
-
-.nav-links a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: #4b0082;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: #5c2d91;
-  border-bottom: 2px solid #5c2d91;
-}
-
-/* ===== HERO SECTION ===== */
-.hero {
-  background: linear-gradient(to right, #f7f0ff, #e6e0ff);
-  padding: 6rem 2rem;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: #4b0082;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  color: #555;
-}
-
-/* ===== HERO SECTION ===== */
-.hero {
+.brand {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #ffffff, #e6e6fa);
-}
-
-.hero-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.hero-text h2 {
-  font-size: 2.8rem;
-  color: #4b0082;
-  margin-bottom: 1rem;
-}
-
-.hero-text p {
-  font-size: 1.1rem;
-  max-width: 500px;
-}
-
-.hero-button {
-  display: inline-block;
-  margin-top: 1.5rem;
-  background-color: #4b0082;
+  gap: 10px;
+  background-color: #4a148c;
+  padding: 10px 25px;
+  border-radius: 30px; /* oval shape */
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.hero-button:hover {
-  background-color: #5c2d91;
+  box-shadow: 0 4px 12px rgba(74, 20, 140, 0.5);
 }
 
 
-/* ===== ABOUT SECTION ===== */
-.about {
-  padding: 4rem 2rem;
-  background-color: #fff;
-}
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-.about-image img {
-  width: 200px;
-  height: 200px;
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 100px;
-  border: 4px solid #4b0082;
 }
 
-.about-content {
-  max-width: 600px;
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #fff;
+  min-width: 160px;
+  border-radius: 6px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+body {
+  padding-top: 80px;
+}
+
+/* General section style */
+section.about,
+section.skills {
+  background: linear-gradient(to right, #5a3391, #fbfafb); /* soft purple background */
+  padding: 3rem 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border-radius: 16px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ===== SKILLS SECTION ===== */
-   /* ABOUT & SKILLS FLEX */
-    .about, .skills {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-    .about img, .skills img {
-      flex: 1;
-      max-width: 200px;
-      width: auto;
-      border-radius: 10px;
-      object-fit: contain;
-    }
-    .text {
-      flex: 2;
-      padding: 1rem;
-    }
+section.about:hover,
+section.skills:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+}
 
-    /* SKILL BARS */
-    .skill-bar {
-      background: #eee;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-bottom: 1rem;
-      max-width: 400px;
-    }
-    .skill-bar span {
-      display: block;
-      height: 24px;
-      background: #797474bd;
-      color: #fff;
-      padding-left: 10px;
-      line-height: 24px;
-    }
+/* About image styling */
+.about-image img {
+  max-width: 250px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(166, 82, 166, 0.155);
+}
 
-    /* SOFT SKILLS LIST */
-    .soft-skills {
-      text-align: left;
-      margin-top: 15px;
-    }
-    .soft-skills ul {
-      padding-left: 20px;
-      list-style-type: disc;
-    }
-    .soft-skills li {
-      margin-bottom: 10px;
-    }
+/* About content */
+.about-content,
+.text {
+  color: #300e47;
+  font-size: 1rem;
+  line-height: 1.8;
+}
 
+/* Section titles */
+.about-content h3,
+.text h2 {
+  color: #63238e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Skill bars */
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 25px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  background: #443463;
+  color: white;
+  padding: 10px;
+  border-radius: 25px;
+  animation: fillBar 2s ease-out;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.soft-skills ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.soft-skills li {
+  position: relative;
+  padding-left: 20px;
+  margin: 6px 0;
+  color: #e8e5e8;
+  border-radius: 6px;
+  text-align: left;
+}
+
+/* Custom dotted bullet */
+.soft-skills li::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  width: 6px;
+  height: 6px;
+  background-color: #4a148c; 
+  border-radius: 50%; 
+}
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
