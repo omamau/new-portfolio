@@ -350,21 +350,31 @@ footer {
 }
 @media (max-width: 480px) {
   .navbar .container {
-    padding: 0.5rem 1rem; /* reduce top-bottom and side padding */
+    padding: 0.5rem 1rem;
   }
 
   .brand {
-    padding: 0 8px;
+    display: flex;
+    align-items: center;
     gap: 6px;
+    padding: 4px 10px;
+    white-space: nowrap; /* Keeps text in one line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.85rem; /* Reduces text size */
+    background-color: #f8f7f5;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(181, 132, 25, 0.5);
+    color: rgb(72, 55, 5);
   }
 
   .brand span {
-    font-size: 0.9rem; /* smaller text for name */
+    font-size: 0.85rem;
   }
 
   .profile-pic {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
   }
 
   .dropbtn {
@@ -372,6 +382,6 @@ footer {
   }
 
   body {
-    padding-top: 70px; /* reduce top space to match smaller header */
+    padding-top: 65px; /* Adjust for smaller header */
   }
 }
