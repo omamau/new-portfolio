@@ -195,11 +195,8 @@ section.skills:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-}
-.project-card.active {
+.project-card:hover,
+.project-card:active {
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
@@ -228,7 +225,8 @@ section.skills.active {
   display: inline-block;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:active  {
   background-color: #5a1a96;
 }
 
