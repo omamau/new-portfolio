@@ -358,10 +358,10 @@ footer {
     align-items: center;
     gap: 6px;
     padding: 4px 10px;
-    white-space: nowrap; /* Keeps text in one line */
+    white-space: nowrap; /* this Keeps text in one line */
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.85rem; /* Reduces text size */
+    font-size: 0.85rem; /* this will Reduce text size */
     background-color: #f8f7f5;
     border-radius: 20px;
     box-shadow: 0 4px 12px rgba(181, 132, 25, 0.5);
@@ -430,4 +430,12 @@ section.skills:active {
 section.about,
 section.skills {
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Enable hover-like effects on mobile using focus */
+.project-card:focus,
+section.about:focus,
+section.skills:focus {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+  outline: none;
 }
