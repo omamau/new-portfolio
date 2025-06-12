@@ -44,6 +44,22 @@ I am a results-driven Data Analyst with a passion for turning data into actionab
       </div>
     </div>
   </section>
+  <script>
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('touchstart', () => {
+      // Remove active from all cards
+      document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
+      // Add active to the touched card
+      card.classList.add('active');
+    });
+
+    // Optional: remove the effect after a while
+    card.addEventListener('touchend', () => {
+      setTimeout(() => card.classList.remove('active'), 1000); // remove after 1s
+    });
+  });
+</script>
+
 </body>
     <section id="skills" class="skills section">
       <div class="text">
@@ -72,7 +88,7 @@ I am a results-driven Data Analyst with a passion for turning data into actionab
     <section id="projects" class="projects">
       <h3>Featured Projects</h3>
       <div class="project-grid">
-       <div class="project-card" tabindex="0">
+        <div class="project-card">
           <h4>Customer Risk Analysis</h4>
           <p>
 Risk analysis helps businesses identify potential threats and evaluate their impact.
@@ -80,8 +96,7 @@ Running risk analysis is essential for informed decisions and long-term success.
 This project focused on assessing customer retention and churn to manage business risks         </p>
 <a href="imagesasset/Recording 2025-05-12 002126.mp4" target="_blank" class="btn">📄View Project</a>
         </div>
-       <div class="project-card" tabindex="0">
-
+        <div class="project-card">
           <h4>Contact Center Report</h4>
           <p>
          A contact center report tracks key metrics like call volume, wait times, and customer satisfaction.
@@ -92,8 +107,7 @@ This report was created to monitor and optimize contact center effectiveness.
 <a href="imagesasset/PWC RECOR.mp4" target="_blank" class="btn">📄View Project</a>
         </div>
 
-     <div class="project-card" tabindex="0">
-
+         <div class="project-card">
           <h4>Mental Health Analysis</h4>
           <p>
 Gender health analysis explores how health risks and outcomes vary by gender.
@@ -103,8 +117,7 @@ Understanding them ensures more inclusive and effective healthcare strategies.  
 <a href="imagesasset/Recording 2025-05-11 031633.mp4" target="_blank" class="btn">📄View Project</a>
         </div>
 
-        <div class="project-card" tabindex="0">
-
+         <div class="project-card">
           <h4>Sales Analysis</h4>
           <p>
 Sales analysis reviews data to track performance, trends, and customer behavior.
@@ -114,7 +127,7 @@ On this project different factors were examined to determine revunue trend and p
 <a href="imagesasset/Recording 2025-05-12 002557.mp4" target="_blank" class="btn">📄View Project</a>
         </div>
 
-<div class="project-card" tabindex="0">
+         <div class="project-card">
           <h4>Gender Pay Analysis</h4>
           <p>
 For clarity purpose, the data used for this project is an open source data and can not be used for conclusion.
@@ -122,7 +135,7 @@ However, this project was aimed at ascertaining the factors that determine salar
 <a href="imagesasset/renumeration.mp4" target="_blank" class="btn">📄View Project</a>
         </div>
 
-<div class="project-card" tabindex="0">
+         <div class="project-card">
           <h4>Business Report</h4>
           <p>
 Businesses that do not run sales and revenue analysis tend to mismanage capital and risks running into loss overtime, 
@@ -131,7 +144,7 @@ hence the need for sales report for any type or range of business and this effec
         </div>
 
         
-        <!-- Add more cards where there are more projects -->
+        <!-- i will add more project cards where are more projects here -->
       </div>
     </section>
     <section class="resume" id="resume">
