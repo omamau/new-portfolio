@@ -348,3 +348,30 @@ footer {
     padding-top: 70px;
   }
 }
+@media (max-width: 480px) {
+  .navbar .container {
+    padding: 0.5rem 1rem; /* reduce top-bottom and side padding */
+  }
+
+  .brand {
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  .brand span {
+    font-size: 0.9rem; /* smaller text for name */
+  }
+
+  .profile-pic {
+    width: 32px;
+    height: 32px;
+  }
+
+  .dropbtn {
+    font-size: 20px;
+  }
+
+  body {
+    padding-top: 70px; /* reduce top space to match smaller header */
+  }
+}
