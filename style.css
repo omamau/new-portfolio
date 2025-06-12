@@ -2,7 +2,7 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 90%;
+  width: 100%;
   background-color: #fefcfe;
   z-index: 1000;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -20,11 +20,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #4a148c;
-  padding: 10px 25px;
-  border-radius: 30px; /* oval shape */
-  color: white;
-  box-shadow: 0 4px 12px rgba(74, 20, 140, 0.5);
+  background-color: #f8f7f5;
+  padding: 0px 10px;
+  border-radius: 20px; /* oval shape */
+  color: rgb(72, 55, 5);
+  box-shadow: 0 4px 12px rgba(181, 132, 25, 0.5);
 }
 
 
@@ -71,17 +71,17 @@
   background-color: #f1f1f1;
 }
 body {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 /* General section style */
 section.about,
 section.skills {
-  background: linear-gradient(to right, #5a3391, #fbfafb); /* soft purple background */
+  background: linear-gradient(to right, #d4d0c0, #f0dff8); /* soft purple background */
   padding: 3rem 2rem;
   margin: 2rem auto;
   max-width: 1000px;
-  border-radius: 16px;
+  border-radius: 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -94,7 +94,7 @@ section.skills:hover {
 
 /* About image styling */
 .about-image img {
-  max-width: 250px;
+  max-width: 100px;
   border-radius: 10px;
   margin-bottom: 1rem;
   box-shadow: 0 4px 12px rgba(166, 82, 166, 0.155);
@@ -111,7 +111,7 @@ section.skills:hover {
 /* Section titles */
 .about-content h3,
 .text h2 {
-  color: #63238e;
+  color: #39035d;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -126,9 +126,9 @@ section.skills:hover {
 
 .skill-bar span {
   display: block;
-  background: #443463;
-  color: white;
-  padding: 10px;
+  background: #4c377a;
+  color: rgb(218, 207, 230);
+  padding: 0px;
   border-radius: 25px;
   animation: fillBar 2s ease-out;
 }
@@ -152,7 +152,7 @@ section.skills:hover {
   position: relative;
   padding-left: 20px;
   margin: 6px 0;
-  color: #e8e5e8;
+  color: #1d0832;
   border-radius: 6px;
   text-align: left;
 }
@@ -173,6 +173,8 @@ section.skills:hover {
 .projects {
   background-color: #f0f0f8;
   padding: 4rem 2rem;
+    color: #230635;
+
 }
 
 .projects h3 {
@@ -192,7 +194,7 @@ section.skills:hover {
   background-color: white;
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(217, 88, 88, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -232,6 +234,8 @@ section.skills:hover {
 .resume h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+    color: #31094a;
+
 }
 
 .resume p {
