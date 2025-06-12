@@ -385,3 +385,49 @@ footer {
     padding-top: 65px; /* Adjust for smaller header */
   }
 }
+/* === SIMULATE HOVER ON MOBILE === */
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #5a1a96;
+}
+
+.contact-buttons a:hover,
+.contact-buttons a:focus,
+.contact-buttons a:active {
+  background-color: #5c2d91;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:focus,
+.dropdown-content a:active {
+  background-color: #f1f1f1;
+}
+
+.project-card:hover,
+.project-card:focus,
+.project-card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+section.about:hover,
+section.about:focus,
+section.about:active,
+section.skills:hover,
+section.skills:focus,
+section.skills:active {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+}
+
+/* Optional: Add smooth transition for all interactive elements */
+.btn,
+.contact-buttons a,
+.dropdown-content a,
+.project-card,
+section.about,
+section.skills {
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
