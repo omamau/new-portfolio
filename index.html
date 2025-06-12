@@ -44,22 +44,7 @@ I am a results-driven Data Analyst with a passion for turning data into actionab
       </div>
     </div>
   </section>
-  <script>
-  document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('touchstart', () => {
-      // Remove active from all cards
-      document.querySelectorAll('.project-card').forEach(c => c.classList.remove('active'));
-      // Add active to the touched card
-      card.classList.add('active');
-    });
-
-    // Optional: remove the effect after a while
-    card.addEventListener('touchend', () => {
-      setTimeout(() => card.classList.remove('active'), 1000); // remove after 1s
-    });
-  });
-</script>
-
+  
 </body>
     <section id="skills" class="skills section">
       <div class="text">
@@ -171,5 +156,19 @@ hence the need for sales report for any type or range of business and this effec
     <footer>
       <p>© 2025 Chioma | All Rights Reserved</p>
     </footer>
+    <script>
+  ['.project-card', 'section.about', 'section.skills'].forEach(selector => {
+    document.querySelectorAll(selector).forEach(elem => {
+      elem.addEventListener('touchstart', () => {
+        document.querySelectorAll(selector).forEach(e => e.classList.remove('active'));
+        elem.classList.add('active');
+      });
+      elem.addEventListener('touchend', () => {
+        setTimeout(() => elem.classList.remove('active'), 1000);
+      });
+    });
+  });
+</script>
+
   </body>
 </html>

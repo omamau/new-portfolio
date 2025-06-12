@@ -204,6 +204,12 @@ section.skills:hover {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
+section.about.active,
+section.skills.active {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(128, 0, 128, 0.2);
+}
+
 .project-card h4 {
   color: #4b0082;
   margin-bottom: 0.5rem;
